@@ -1,0 +1,566 @@
+/* =========================
+   ORNIQUE - STYLE.CSS
+   PART 2A
+========================= */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f8f8;
+    color:#222;
+}
+
+/* Links */
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Header */
+header{
+    width:100%;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+}
+
+.logo h2{
+    font-size:28px;
+    letter-spacing:2px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+nav ul li a{
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#c89b3c;
+}
+
+/* Header Icons */
+.header-icons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    font-size:22px;
+}
+
+.header-icons i{
+    cursor:pointer;
+    transition:.3s;
+}
+
+.header-icons i:hover{
+    color:#c89b3c;
+}
+
+.cart-icon{
+    position:relative;
+}
+
+#cart-count{
+    position:absolute;
+    top:-10px;
+    right:-12px;
+    width:20px;
+    height:20px;
+    background:#c89b3c;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* Hero */
+.hero{
+    height:85vh;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../images/hero-banner.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    max-width:700px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.shop-btn{
+    display:inline-block;
+    background:#c89b3c;
+    color:#fff;
+    padding:15px 40px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.shop-btn:hover{
+    background:#a87f28;
+}
+
+/* Features */
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:70px 8%;
+    background:#fff;
+}
+
+.feature{
+    text-align:center;
+}
+
+.feature i{
+    font-size:42px;
+    color:#c89b3c;
+    margin-bottom:18px;
+}
+
+.feature h3{
+    margin-bottom:10px;
+  }
+/* =========================
+   ORNIQUE - STYLE.CSS
+   PART 2B
+========================= */
+
+/* Products */
+
+.products{
+    padding:80px 8%;
+}
+
+.products h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#222;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.product-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:24px;
+    color:#c89b3c;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.add-cart{
+    width:100%;
+    border:none;
+    background:#111;
+    color:#fff;
+    padding:14px;
+    font-size:16px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-cart:hover{
+    background:#c89b3c;
+}
+
+/* Buttons */
+
+button{
+    font-family:'Poppins',sans-serif;
+}
+
+.checkout-btn,
+#clear-cart{
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.checkout-btn:hover,
+#clear-cart:hover{
+    opacity:.9;
+}
+/* =========================
+   ORNIQUE - STYLE.CSS
+   PART 2C
+========================= */
+
+/* Shopping Cart */
+
+.cart-section{
+    padding:80px 8%;
+    background:#ffffff;
+}
+
+.cart-section h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+#cart-items{
+    background:#f8f8f8;
+    border-radius:15px;
+    padding:20px;
+    min-height:120px;
+    margin-bottom:30px;
+}
+
+.cart-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.cart-item:last-child{
+    border-bottom:none;
+}
+
+.cart-item h4{
+    font-size:18px;
+}
+
+.cart-item p{
+    color:#666;
+}
+
+.cart-summary{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+
+#cart-total{
+    color:#c89b3c;
+    font-size:28px;
+    font-weight:bold;
+}
+
+#clear-cart{
+    background:#d62828;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:8px;
+}
+
+/* Checkout */
+
+.checkout{
+    padding:80px 8%;
+    background:#f4f4f4;
+}
+
+.checkout h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+#checkout-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+#checkout-form input,
+#checkout-form textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+#checkout-form input:focus,
+#checkout-form textarea:focus{
+    border-color:#c89b3c;
+}
+
+.checkout-btn{
+    background:#25D366;
+    color:#fff;
+    padding:15px;
+    border-radius:10px;
+    font-size:18px;
+}
+
+/* About */
+
+.about{
+    padding:80px 8%;
+    text-align:center;
+    background:#fff;
+}
+
+.about h2{
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    color:#555;
+    line-height:1.8;
+}
+
+/* Contact */
+
+.contact{
+    padding:80px 8%;
+    background:#f8f8f8;
+}
+
+.contact h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:38px;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.contact-box p{
+    margin:15px 0;
+}
+
+.contact-box a{
+    color:#c89b3c;
+}
+
+/* Footer */
+
+footer{
+/* =========================
+   ORNIQUE - STYLE.CSS
+   PART 2D
+========================= */
+
+/* Responsive Design */
+
+@media (max-width: 992px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .cart-summary{
+        flex-direction:column;
+        gap:20px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .products h2,
+    .cart-section h2,
+    .checkout h2,
+    .about h2,
+    .contact h2{
+        font-size:30px;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-box{
+        padding:20px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .header-icons{
+        gap:15px;
+        font-size:18px;
+    }
+
+    .shop-btn,
+    .checkout-btn,
+    .add-cart{
+        width:100%;
+    }
+
+}
+
+/* Smooth Animations */
+
+.product-card,
+.feature,
+.contact-box,
+.shop-btn,
+.add-cart,
+.checkout-btn{
+    transition:all .3s ease;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.shop-btn:hover,
+.checkout-btn:hover,
+.add-cart:hover{
+    transform:scale(1.03);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eeeeee;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#c89b3c;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#a87f28;
+}
