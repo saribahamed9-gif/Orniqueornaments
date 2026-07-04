@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Ornique | Premium Jewellery</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+
+<img src="images/logo.png"
+alt="Ornique">
+
+<h2>ORNIQUE</h2>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#products">Shop</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="header-icons">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<i class="fa-regular fa-heart"></i>
+
+<div class="cart-icon">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cart-count">0</span>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Luxury Jewellery Collection</h1>
+
+<p>
+Elegant Earrings crafted to
+make every moment shine.
+</p>
+
+<a href="#products"
+class="shop-btn">
+
+Shop Now
+
+</a>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<div class="feature">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>Fast Delivery</h3>
+
+<p>All over Bangladesh</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-shield"></i>
+
+<h3>Secure Shopping</h3>
+
+<p>100% Trusted</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-gift"></i>
+
+<h3>Premium Quality</h3>
+
+<p>Luxury Finish</p>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS START -->
+
+<section
+id="products"
+class="products">
+
+<h2>Featured Products</h2>
+
+<div
+class="product-grid">
+  <!-- PRODUCT 1 -->
+<div class="product-card">
+    <img src="images/product1.jpg" alt="Luxury Earrings">
+
+    <div class="product-info">
+        <h3>Luxury Pearl Earrings</h3>
+        <p class="price">৳450</p>
+
+        <button
+            class="add-cart"
+            data-name="Luxury Pearl Earrings"
+            data-price="450">
+            Add to Cart
+        </button>
+    </div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="product-card">
+    <img src="images/product2.jpg" alt="Gold Earrings">
+
+    <div class="product-info">
+        <h3>Golden Hoop Earrings</h3>
+        <p class="price">৳550</p>
+
+        <button
+            class="add-cart"
+            data-name="Golden Hoop Earrings"
+            data-price="550">
+            Add to Cart
+        </button>
+    </div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="product-card">
+    <img src="images/product3.jpg" alt="Silver Earrings">
+
+    <div class="product-info">
+        <h3>Silver Crystal Earrings</h3>
+        <p class="price">৳600</p>
+
+        <button
+            class="add-cart"
+            data-name="Silver Crystal Earrings"
+            data-price="600">
+            Add to Cart
+        </button>
+    </div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="product-card">
+    <img src="images/product4.jpg" alt="Rose Gold Earrings">
+
+    <div class="product-info">
+        <h3>Rose Gold Earrings</h3>
+        <p class="price">৳750</p>
+
+        <button
+            class="add-cart"
+            data-name="Rose Gold Earrings"
+            data-price="750">
+            Add to Cart
+        </button>
+    </div>
+</div>
+
+</div>
+</section>
+<!-- SHOPPING CART -->
+<section class="cart-section">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <div class="cart-summary">
+
+        <h3>
+            Total:
+            <span id="cart-total">৳0</span>
+        </h3>
+
+        <button id="clear-cart">
+            Clear Cart
+        </button>
+
+    </div>
+
+</section>
+
+<!-- CHECKOUT -->
+
+<section id="checkout" class="checkout">
+
+    <h2>Checkout</h2>
+
+    <form id="checkout-form">
+
+        <input
+            type="text"
+            id="customer-name"
+            placeholder="Full Name"
+            required>
+
+        <input
+            type="tel"
+            id="customer-phone"
+            placeholder="Phone Number"
+            required>
+
+        <textarea
+            id="customer-address"
+            placeholder="Delivery Address"
+            rows="4"
+            required></textarea>
+
+        <button type="submit" class="checkout-btn">
+            Place Order on WhatsApp
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+    <h2>About Ornique</h2>
+
+    <p>
+        Ornique is a premium jewellery brand offering elegant,
+        fashionable and affordable accessories. We focus on
+        quality, beauty and customer satisfaction.
+    </p>
+
+</section>
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+
+        <p><strong>Phone:</strong> +8801577085192</p>
+
+        <p><strong>Email:</strong> orniqueornaments9@gmail.com</p>
+
+        <p><strong>Facebook:</strong>
+            <a href="https://www.facebook.com/share/1CgoewfT25/" target="_blank">
+                Visit Our Facebook Page
+            </a>
+        </p>
+
+        <p><strong>WhatsApp:</strong>
+            <a href="https://wa.me/8801577085192" target="_blank">
+                Chat with Us
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Ornique. All Rights Reserved.
+    </p>
+
+</footer>
+
+<!-- JavaScript Files -->
+
+<script src="data/products.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
